@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+
+
+    .container {
+        max-width: 1440px;
+        display: flex;
+
+        margin: 0 auto;
+
+        .div1 {
+            width: 212px;
+            
+            flex-shrink: 0;
+            border-radius: 40px 0px 0px 40px;
+            background: #FFF;
+            box-shadow: 1px 0px 2px 0px rgba(128, 128, 128, 0.10);
+            padding: 40px 20px 35px;
+            display: flex;
+            gap: 110px;
+            flex-direction: column;
+            align-items: center;
+            
+            .btns-box{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 100px;
+
+                .btn {
+                    
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 7px;
+                    width: 172px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    border-radius: 30px;
+                    
+                     p {
+                        color: var(--white, #ABB5BA);
+    
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    div {
+                        padding: 6.5px;
+                        width: 36px;
+                        height: 36px;
+                        flex-shrink: 0;
+                       
+                        border-radius: 50%;
+                        i {
+                            color: #ABB5BA;
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .btn:hover{
+                    background: var(--red-orange, #EB763C);
+                    p{
+                        color: var(--white, #FFF);
+                    }
+                    div{
+                        background: var(--white, #FFF);
+                        i{
+                            color: #EB763C;
+                        }
+                    }
+                }
+                .btn:nth-child(3){
+                    div{
+                        padding:9.5px 6.5px;
+                    }
+                }
+
+            }
+        }
+    }
+}
